@@ -15,4 +15,6 @@ def get_openai_llm():
     }
     if OPENAI_BASE_URL:
         openai_params['base_url'] = OPENAI_BASE_URL
+
+    print(f"openai_params: {openai_params}")
     return ChatOpenAI(**openai_params)
